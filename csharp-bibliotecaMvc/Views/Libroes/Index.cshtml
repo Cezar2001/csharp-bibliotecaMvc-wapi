@@ -8,6 +8,12 @@
 
 <p>
     <a asp-action="Create">Create New</a>
+    @*@foreach (var autore in ViewData["Autori"] as List<Autore>)
+    {
+        <div>
+            @autore.AutoreID
+        </div>
+    }*@
 </p>
 <table class="table">
     <thead>

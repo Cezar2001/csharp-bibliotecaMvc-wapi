@@ -22,6 +22,7 @@ namespace csharp_bibliotecaMvc.Controllers
         // GET: Libroes
         public async Task<IActionResult> Index()
         {
+            //ViewData["Autori"] = _context.Autori.ToList();
               return _context.Libri != null ? 
                           View(await _context.Libri.ToListAsync()) :
                           Problem("Entity set 'BibliotecaContext.Libri'  is null.");
